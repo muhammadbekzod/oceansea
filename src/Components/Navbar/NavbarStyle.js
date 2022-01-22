@@ -46,10 +46,29 @@ align-items: center;
 
 Wrapper.Title = styled.div`
 cursor: pointer;
-font-size: 18px;
+font-size: 16px;
+font-weight: 600;
+color: rgba(4, 17, 29, 0.75);
 font-family: 'Poppins', sans-serif;
 
 `
 Wrapper.Logo = styled.img`
 width: 32px;
+`
+export const DropDownCon = styled.div`
+cursor: pointer;
+width: 220px;
+height: 60px;
+border-bottom: 1px solid lightgray;
+display: flex;
+align-items: center;
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+:hover{
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+p{
+    margin-left: 20px;
+}
 `

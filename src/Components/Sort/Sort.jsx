@@ -43,7 +43,9 @@ const [on, setOn] = useState(true)
                       onClick(false);
                       setOn(false);
                   }}>
-                <Wrapper.Icon src={MenuV}
+                <Wrapper.Icon
+                menuRicon 
+                src={MenuV}
                 active={!on}/>
                </IconWrapper>
                </IconContainer>

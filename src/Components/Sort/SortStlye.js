@@ -100,23 +100,24 @@ width: 100%;
 border-right: ${({menuicon})=>(menuicon ? '1px solid lightgray':'0')} ;
 border-top-left-radius: ${({menuicon})=>(menuicon ? '10px':'0')} ;
 border-bottom-left-radius: ${({menuicon})=>(menuicon ? '10px':'0')} ;
+
+
 :hover{
     box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+  
 }
 `
 Wrapper.Icon = styled.img`
-
 width: 26px;
 cursor: pointer;
-/* border: 1px solid red; */
-margin-right: ${({menuicon})=>(menuicon ? '10px':'0')} ;
+
 `
 Container.Title = styled.div`
-
+margin-top: 30px;
 margin-left: 8px;
     font: normal normal normal 16px Poppins;
     color: rgb(53, 56, 64);
-    height: 50px;
+    /* height: 10px; */
     display: flex;
     align-items: flex-end;
 `
