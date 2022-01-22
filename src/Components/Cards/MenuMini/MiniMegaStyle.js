@@ -64,7 +64,7 @@ align-items: center;
 `
 Wrapper.Icon = styled.img`
 width: 16px;    
-cursor: pointer;
+cursor: pointer ;
 `
 
 Wrapper.IconWrap = styled.div`

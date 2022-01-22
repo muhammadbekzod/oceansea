@@ -83,6 +83,7 @@ display: flex;
 justify-content: space-evenly;
 border: 1px solid lightgray;
 height: 50px;
+padding: 5px;
 border-radius: 10px;
 width: 100px;
 margin-right: 5px;
@@ -90,6 +91,8 @@ margin-right: 5px;
 Wrapper.Icon = styled.img`
 width: 26px;
 cursor: pointer;
+/* border-right: ${({menuicon})=>(menuicon ? '1px solid lightgray':'0')} ; */
+margin-right: ${({menuicon})=>(menuicon ? '5px':'0')} ;
 `
 Container.Title = styled.div`
 

@@ -4,6 +4,7 @@ export const Container = styled.div`
 display: flex;
 margin-top: 50px;
 box-sizing: border-box;
+
 `
 export const Wrapper = styled.div`
 width: 15vw;
