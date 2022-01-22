@@ -1,13 +1,18 @@
 import React from 'react'
-import Details from './MenuH/details/Details'
-import DetailsV from './MenuV/details/Details'
+import styled from 'styled-components'
+import MegaControll from './MenuMega/controller/megaController'
+import MiniControll from './MenuMini/controller/miniController'
+
 
 const MenuController = ({active}) => {
     return (
-        <div>
-            {active ? <Details/> : <DetailsV/>}
-        </div>
+        <Container>
+            {active ? <MegaControll/> : <MiniControll/>}
+        </Container>
     )
 }
+export const Container = styled.div`
+display: flex;
+`
 
 export default MenuController

@@ -7,6 +7,7 @@ box-sizing: border-box;
 
 `
 export const Wrapper = styled.div`
+cursor: pointer;
 width: 15vw;
 /* height: 46vh; */
 border: 1px solid lightgray;
@@ -27,6 +28,10 @@ flex-direction: column;
 @media screen and (max-width: 918px) {
     width: 47vw;
 } 
+:hover{
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    transform: translateY(-1%);
+}
 `
 
 Wrapper.Photo = styled.img`

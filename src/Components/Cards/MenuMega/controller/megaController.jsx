@@ -21,6 +21,7 @@ const MegaControll = () => {
 export const Container = styled.div`
 display: grid;
 grid-template-areas: "a a a a a";
+margin: 30px;
 gap: 20px;
 @media screen and (max-width: 1856px) {
     display: grid;

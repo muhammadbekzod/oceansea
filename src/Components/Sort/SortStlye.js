@@ -77,22 +77,39 @@ width: 270px;
 height: 50px;
 margin-right: 5px;
 `
-
-export const IconWrapper = styled.div`
+export const IconContainer = styled.div`
 display: flex;
+align-items: center;
 justify-content: space-evenly;
 border: 1px solid lightgray;
 height: 50px;
-padding: 5px;
+
 border-radius: 10px;
 width: 100px;
 margin-right: 5px;
 `
+export const IconWrapper = styled.div`
+/* margin: 0  5px; */
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+/* border: 1px solid red; */
+border-right: ${({menuicon})=>(menuicon ? '1px solid lightgray':'0')} ;
+border-top-left-radius: ${({menuicon})=>(menuicon ? '10px':'0')} ;
+border-bottom-left-radius: ${({menuicon})=>(menuicon ? '10px':'0')} ;
+:hover{
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+`
 Wrapper.Icon = styled.img`
+
 width: 26px;
 cursor: pointer;
-/* border-right: ${({menuicon})=>(menuicon ? '1px solid lightgray':'0')} ; */
-margin-right: ${({menuicon})=>(menuicon ? '5px':'0')} ;
+/* border: 1px solid red; */
+margin-right: ${({menuicon})=>(menuicon ? '10px':'0')} ;
 `
 Container.Title = styled.div`
 

@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { Container, IconWrapper, Wrapper } from './SortStlye'
+import { Container, IconContainer, IconWrapper, Wrapper } from './SortStlye'
 import MenuH from '../../media/icons/menu.svg'
 import MenuV from '../../media/icons/menuMini.svg'
-import MegaControll from '../Cards/MenuMega/controller/megaController'
 import ButtonDropDownCmp from '../button/buttonDropDownCmp'
 
 
 const Sort = ({onClick}) => {
-
+const [on, setOn] = useState(true)
     
     return (
         <Container>
@@ -23,16 +22,37 @@ const Sort = ({onClick}) => {
                 <ButtonDropDownCmp>
                     
                 </ButtonDropDownCmp>
-                <IconWrapper>
-                <Wrapper.Icon menuicon src={MenuH}/>
-                <Wrapper.Icon src={MenuV}/>
-                </IconWrapper>
+                <IconContainer>
+                <IconWrapper menuicon
+                className="menuIcon"
+                  active ={on}
+                  onClick={()=>{
+                      onClick(true);
+                      setOn(true);
+                  }}>
+                <Wrapper.Icon 
+                menuicon 
+                src={MenuH}
+                  active={on}
+                />
+                 </IconWrapper>
+                 <IconWrapper 
+                className="menuIcon"
+                  active ={!on}
+                  onClick={()=>{
+                      onClick(false);
+                      setOn(false);
+                  }}>
+                <Wrapper.Icon src={MenuV}
+                active={!on}/>
+               </IconWrapper>
+               </IconContainer>
                 </Wrapper.Right>
             </Wrapper>
             <Container.Title>7 Items
 
             </Container.Title>
-            <MegaControll/>
+            {/* <MegaControll/> */}
         </Container>
     )
 }
