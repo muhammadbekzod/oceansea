@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, ButtonCon, ButtonWrapper, Container, Logo, Subtitle, Title, Wrapper } from './HeaderStyle'
 import logo from '../../../media/icons/sLogo.png'
 import window from '../../../media/icons/window.svg'
@@ -11,7 +11,9 @@ import items from '../../../media/icons/menu.svg'
 import activity from '../../../media/icons/activity.svg'
 
 
-const HomeHeader = () => {
+const HomeHeader = ({onClick}) => {
+    const [on, setOn] = useState(true)
+
     return (
         <Container>
             <Wrapper>
@@ -89,12 +91,33 @@ Partners who acquired LAND to build Mega City in The Sandbox’s metaverse inclu
 
             </Container.TextWrapper>
             <ButtonWrapper>
-                <ButtonCon>
-                <Button src={items}/>
+                <ButtonCon
+                className="itemIcon"
+                active ={on}
+                onClick={()=>{
+                onClick(true);
+                setOn(true);
+                 }}
+                >
+                <Button
+                src={items}
+                active={on} 
+                />
                 Items
                 </ButtonCon>
-                <ButtonCon>
-                <Button src={activity}/>
+                <ButtonCon
+                className="activityIcon"
+                active ={!on}
+                onClick={()=>{
+                onClick(false);
+                setOn(false);
+                }}
+                >
+                <Button 
+                src={activity}
+                active={!on} 
+                
+                />
                 Activity
                 </ButtonCon>
             </ButtonWrapper>

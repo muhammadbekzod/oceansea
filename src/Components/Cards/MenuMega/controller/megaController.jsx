@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from 'styled-components'
 import { card } from '../../../../Mock/mockData'
@@ -9,8 +8,8 @@ const MegaControll = () => {
     return (
         <>
         <Container>
-           {card.info.map((value)=>(
-               <MenuMega value={value} />
+           {card.info.map((value, id)=>(
+               <MenuMega key ={id} value={value} />
            ))}
          
         </Container>

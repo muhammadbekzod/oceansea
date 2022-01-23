@@ -198,10 +198,13 @@ width: 24px;
 export const ButtonCon = styled.div`
 cursor: pointer;
 display: flex;
+justify-content: center;
 font: normal normal normal 16px Poppins;
 align-items: center;
 color: gray;
 width: 150px;
 height: 70px;
 justify-content: space-evenly;
+border-bottom: ${({active})=> (active) ? "4px solid rgb(32, 129, 226)" : 'none'};
+border-radius: ${({active})=> (active) ? "3px" : 'none'};
 `
