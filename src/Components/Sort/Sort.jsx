@@ -44,14 +44,15 @@ const [on, setOn] = useState(true)
                       setOn(false);
                   }}>
                 <Wrapper.Icon
-                menuRicon 
+                menuiconright 
                 src={MenuV}
                 active={!on}/>
                </IconWrapper>
                </IconContainer>
                 </Wrapper.Right>
             </Wrapper>
-            <Container.Title>7 Items
+            <Container.Title>
+                7 Items
 
             </Container.Title>
             {/* <MegaControll/> */}

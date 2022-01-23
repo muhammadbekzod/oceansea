@@ -58,9 +58,6 @@ const HomeHeader = ({onClick}) => {
             <Container.Text>
           <ControllText />
             </Container.Text>
-
-
-
             </Container.TextWrapper>
             <ButtonWrapper>
                 <ButtonCon

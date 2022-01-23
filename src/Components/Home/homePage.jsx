@@ -13,7 +13,6 @@ const HomePage = () => {
            <Navbar />
            <HomeHeader onClick={(state) => setActive(state)}/>
            <Container>
-            
             <Controller active={active}/>
             {/* <Wrapper>
             <Filter />
