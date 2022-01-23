@@ -9,8 +9,8 @@ const MiniControll = () => {
     return (
         <>
         <Container>
-           {card.info.map((value)=>(
-               <MenuMega value={value} />
+           {card.info.map((value ,id)=>(
+               <MenuMega key={id} value={value} />
            ))}
          
         </Container>

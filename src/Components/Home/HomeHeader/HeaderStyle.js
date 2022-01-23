@@ -162,6 +162,10 @@ border: 1px solid red; */
 
 `
 Container.Text = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 width: 800px;
    font: normal normal normal 16px Poppins;
    color: rgb(112, 122, 131);
@@ -207,4 +211,5 @@ height: 70px;
 justify-content: space-evenly;
 border-bottom: ${({active})=> (active) ? "4px solid rgb(32, 129, 226)" : 'none'};
 border-radius: ${({active})=> (active) ? "3px" : 'none'};
+
 `
